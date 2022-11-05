@@ -1,8 +1,11 @@
-import { loader } from '../assets'
+import { loader } from '../assets';
 
-const Loader = () => (
-  <div className='w-full flex justify-center items-center flex-col'>
-
+const Loader = ({ title }) => (
+  <div className="w-full flex justify-center items-center flex-col">
+    <img src={loader} alt="loader" className="w-21 h-32 object-contain" />
+    <h1 className="font-bold text-2xl text-white mt-2">
+      {title || 'loading...'}
+    </h1>
   </div>
 );
 
