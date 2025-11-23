@@ -4,11 +4,15 @@
 
 /* Active Navigation Link */
 .active {
-  @apply text-cyan-500;
+  @apply text-primary;
 }
 
 .active svg {
-  @apply text-cyan-500;
+  @apply text-primary;
+}
+
+body {
+  background-color: theme('colors.secondary');
 }
 
 .bar:nth-child(2) {
